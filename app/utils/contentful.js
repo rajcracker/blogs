@@ -27,3 +27,23 @@
         const articles = items.map((item) => articlePreview(item));
         return articles;
     };
+
+
+    export const getArticleDetail = async (entryId) => {
+
+       const response = await client.getEntry(entryId);
+     
+      console.log(response, 'it respondojg');
+       const parsedResponse = client.parseEntries(response);
+     
+       
+       const createArticleDetail = (data) => ({
+         title: data.title,
+         description: data.description,
+         summary: data.summary,
+         image: 'https:'+data.image.fields.file.url
+       });
+     
+       return createArticleDetail(parsedResponse.fields);
+     };
+     

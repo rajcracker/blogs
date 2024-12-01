@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 export default function Header() {
     return (
         <>
-         <nav className="navbar navbar-expand-lg blog">
+         <nav className="navbar navbar-expand-lg ">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">{ 'Rajendra Nagar' }</a>
+                <a className="navbar-brand fs-3" href="#">{ 'Rajendra Nagar' } </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>

@@ -16,6 +16,7 @@ body {
   overflow-x: hidden;
   color: #696981;
   background-color: #f8f8f8;
+  font-family: "Tenor Sans";
 
 }
 
@@ -110,7 +111,7 @@ footer {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Tenor Sans" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -177,13 +178,6 @@ a {
   
 }
 
-h2 {
-  padding: 120px 0px 20px 0px ;
-  background: url('../public/assets/1.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  
-}
 
 @media (prefers-color-scheme: dark) {
   html {
