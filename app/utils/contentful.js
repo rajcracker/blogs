@@ -39,6 +39,7 @@
        
        const createArticleDetail = (data) => ({
          title: data.title,
+         AutherName: data.auther.fields.name,
          description: data.description,
          summary: data.summary,
          image: 'https:'+data.image.fields.file.url

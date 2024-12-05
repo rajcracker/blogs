@@ -3,13 +3,8 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <>
-    <footer className="">
+    <footer className="pt-5">
     <div className="container">
-      <div className="row">
-      <div className="colmd-12">
-        <div className="divider mx-auto mt-5 mb-5"></div>
-      </div>
-    </div>
       <div className="row gy-4 gx-5">
         <div className="col-md-6">
         

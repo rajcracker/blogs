@@ -5,7 +5,7 @@ export default function Banner() {
     
         <div className="heroContainer ">
         <div className="row justify-content-center ">
-            <div className="col-lg-9 text-center blog">
+            <div className="col-lg-9 text-center">
                <Image width={150} alt="Rajendra Nagar" height={150} src={'/assets/profile2.jpg'} className="rounded-circle"/>
                 <h1 className="hero-heading">
                 Hello  <span className="highlight-text">Welcome</span>  👋 

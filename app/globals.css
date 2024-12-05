@@ -14,12 +14,28 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  color: #696981;
+  color: #393944;
   background-color: #f8f8f8;
-  font-family: "Tenor Sans";
+  font-size: 18px;
 
 }
+.blog_details ul li {
+  line-height: 20px;
+}
 
+.blog_details table tr td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.blog_details table {
+  margin: 20px 0px 40px 0px;
+}
+
+.blog_details h2 { margin: 40px 0px 40px 0px; }
+h1,h2, h3 {
+  font-weight: 800 !important;
+}
 /** Footer */
 
 .blog {
@@ -28,7 +44,7 @@ body {
   background-repeat: no-repeat;
 }
 footer {
-  padding: 80px 0px 80px;
+  padding: 0px 0px 80px;
   color: #1a1a1a;
   font-size: 0.9rem;
   background: url('../public/assets/foot.jpg');
@@ -66,7 +82,7 @@ footer {
   text-decoration: none;
   margin-bottom: 8px;
   transition: color 0.3s;
-  line-height: 20px;
+  line-height: 25px;
 }
 .footer-links a:hover {
   color: #6c63ff;
@@ -99,19 +115,23 @@ footer {
   background-color: #6c63ff;
   color: #fff;
 }
+.main-blog a {
+  text-decoration:  none;
+}
 
 .blog-title {
   color: #29294b;
 }
 
 .blog-text {
-  color: #696981;
+  color: #303038;
+  font-size: 18px;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Tenor Sans" !important;
+  font-family: "Karla" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -133,8 +153,20 @@ a {
   color: #1a202c; /* Dark shade for the main text */
 }
 .highlight-text, .btn-outline-primary {
-  color: #00bcd4 !important; 
-  border-color: #00bcd4 !important; 
+  color: #cc2e12 !important; 
+  border-color: #cc2e12 !important; 
+}
+
+.cta-pettern {
+  background-image: url('../public/assets/testi-pet.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bg-light {
+  background-color: #f9fbfd !important;
+  padding: 60px 0px 60px 0px;
 }
 
 .box-shadow {
@@ -148,8 +180,16 @@ a {
 
 .btn-outline-primary:hover {
   color: #fff !important; 
-  border-color: #00bcd4 !important; 
-  background-color: #00bcd4 !important; 
+  border-color: #cc2e12 !important; 
+  background-color: #cc2e12 !important; 
+}
+
+.navbar {
+  border-bottom:  1px solid #eee;
+}
+
+.sidebar {
+  border-left: 1px solid #eee;
 }
 
 .subtext {
@@ -173,9 +213,6 @@ a {
 
 .heroContainer {
   padding: 60px 0px 60px 0px ;
-  background: url('../public/assets/main-bg.png');
-  background-position: center center;
-  
 }
 
 
