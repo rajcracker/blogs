@@ -7,7 +7,7 @@ export default function freelance() {
                 
                 <p className="text-muted lead">{'Excited to work on amazing projects! Let’s discuss your ideas over coffee.'}</p>
                 <p>
-                <a href="#" className="text-black text-decoration-none fs-4"><i class="bi bi-phone"></i> { '+91 9950105566'}</a>
+                <a href="tel:+919950105566" className="text-black text-decoration-none fs-4"><i className="bi bi-phone"></i> { '+91 9950105566'}</a>
                 </p>
             </div>
         </section>

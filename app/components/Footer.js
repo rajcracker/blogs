@@ -14,19 +14,19 @@ export default function Footer() {
           </p>
           <ul className="list-inline social-icons">
             <li className="list-inline-item">
-            <a href="#" className="highlight-text text-decoration-none"><i class="bi bi-facebook"></i></a>
+            <a href="#" className="highlight-text text-decoration-none"><i className="bi bi-facebook"></i></a>
             </li>
             <li className="list-inline-item">
-              <a href="#" className="highlight-text text-decoration-none"><i class="bi bi-linkedin"></i></a>
+              <a href="#" className="highlight-text text-decoration-none"><i className="bi bi-linkedin"></i></a>
             </li>
             <li className="list-inline-item">
-              <a href="#" className="highlight-text text-decoration-none"><i class="bi bi-github"></i></a>
+              <a href="#" className="highlight-text text-decoration-none"><i className="bi bi-github"></i></a>
             </li>
             <li className="list-inline-item">
-              <a href="#" className="highlight-text text-decoration-none"><i class="bi bi-envelope"></i></a>
+              <a href="#" className="highlight-text text-decoration-none"><i className="bi bi-envelope"></i></a>
             </li>
           </ul>
-          <p className="mb-0 blog-text">&copy; 2024 All rights reserved.</p>
+          <p className="mb-0 blog-text"><Image width={18} alt="Rajendra Nagar" height={18} src={'/assets/footer_smily.png'}/> {'Feel Free to Contact Me.'}</p>
         </div>
 
         <div className="col-md-6">
@@ -34,19 +34,21 @@ export default function Footer() {
             <div className="col-md-6">
             <h5 className="fw-bold mb-3">Quick Links</h5>
                 <ul className="list-unstyled footer-links">
-                    <li><a href="#" className="text-dark text-decoration-none fw-bold">Privacy Policy</a></li>
-                    <li><a href="#" className="text-dark text-decoration-none fw-bold">Terms & Conditions</a></li>
-                    <li><a href="#" className="text-dark text-decoration-none fw-bold">Why Us</a></li>
-                    <li><a href="#" className="text-dark text-decoration-none fw-bold">Team</a></li>
-                    <li><a href="#" className="text-dark text-decoration-none fw-bold">Careers</a></li>
+                    <li><a href="#" className="text-dark text-decoration-none fw-bold">{'FAQ'}</a></li>
+                    <li><a href="#" className="text-dark text-decoration-none fw-bold">{'About Me'}</a></li>
+                    <li><a href="#" className="text-dark text-decoration-none fw-bold">{'Projects'}</a></li>
+                    <li><a href="#" className="text-dark text-decoration-none fw-bold">{'Contact Us'}</a></li>
+                    <li><a href="#" className="text-dark text-decoration-none fw-bold">{'Blogs'}</a></li>
                 </ul>
             </div>
 
             <div className="col-md-6">
             <h5 className="fw-bold mb-3">{"Let's Connect"}</h5>
                 <ul className="list-unstyled">
-                    <li> <a href="#" className="highlight-text text-decoration-none fs-5"><i class="bi bi-whatsapp"></i> { '+91 9950105566'}</a></li>
-                    <li> <button type="button" class="btn btn-outline-primary mt-3"><i class="bi bi-cloud-arrow-down-fill"></i> { 'Download CV'}</button> <a href="#" className="highlight-text text-decoration-none fs-5"></a></li>
+                    <li> <a href="https://wa.me/+919950105566"  target="_blank" className="highlight-text text-decoration-none fs-5">
+                    <Image width={160} alt="Rajendra Nagar" height={36} src={'/assets/WhatsAppButtonGreenSmall.svg'}/>
+                   </a></li>
+                    <li> <a href="/Rajendra - Full Stack Engineer-(Nov-5-2024).pdf" className="btn btn-outline-primary mt-3" target="_blank"><i className="bi bi-cloud-arrow-down-fill"></i> { 'Download CV'}</a> </li>
                 </ul>
             </div>
 

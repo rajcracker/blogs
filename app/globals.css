@@ -169,6 +169,32 @@ a {
   padding: 60px 0px 60px 0px;
 }
 
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.list-item img {
+  margin-right: 15px;
+}
+.list-item .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+.date-text {
+  color: #929292 !important;
+  font-size: 14px;
+}
+.list-item .description {
+  font-size: 14px;
+  color: #6c757d; /* Muted text color */
+}
+
 .box-shadow {
   border: none;
   border-radius: 12px;
@@ -186,10 +212,6 @@ a {
 
 .navbar {
   border-bottom:  1px solid #eee;
-}
-
-.sidebar {
-  border-left: 1px solid #eee;
 }
 
 .subtext {
@@ -215,9 +237,53 @@ a {
   padding: 60px 0px 60px 0px ;
 }
 
+/* Container for the list */
+.feature-list {
+  list-style: none !important; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Individual list items */
+.feature-list li {
+  position: relative; /* For the icon placement */
+  padding-left: 30px; /* Space for the custom icon */
+  margin-bottom: 10px; /* Spacing between items */
+  font-size: 16px; /* Adjust font size */
+  color: #333; /* Text color */
+  line-height: 1.6; /* Line height for readability */
+}
+
+/* Custom bullet icons */
+.feature-list li::before {
+  content: '✔'; /* Custom icon (e.g., a checkmark) */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px; /* Adjust icon size */
+  color: #cc2e12; /* Icon color (green for checkmark) */
+}
+
+/* Hover effect */
+.feature-list li:hover {
+  color: #cc2e12; /* Change text color on hover */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Optional transition for smooth color change */
+.feature-list li {
+  transition: color 0.3s ease;
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .cta-pettern {
+    background-image: none;
   }
 }

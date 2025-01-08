@@ -1,35 +1,50 @@
+"use client";
 import Image from "next/image";
-
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect } from 'react';
 export default function Header() {
+    const path = usePathname();
+    useEffect(() => {
+        typeof document !== undefined
+          ? require('bootstrap/dist/js/bootstrap.bundle.min.js') // Includes Popper.js
+          : null;
+      }, []);
+      const handleRouteChange = () => {
+        // Programmatically close the menu if it's open
+        const navbarCollapse = document.getElementById('navbarText');
+        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+          bsCollapse.hide();
+        }
+    }
     return (
+       
         <>
          <nav className="navbar navbar-expand-lg">
             <div className="container">
-                <a className="navbar-brand fs-4" href="#"><Image width={50} alt="Rajendra Nagar" height={50} src={'/assets/profile2.jpg'} className="rounded-circle me-2"/> { 'Rajendra Nagar' } </a>
+                <Link className="navbar-brand fs-4" href="/"><Image width={50} alt="Rajendra Nagar" height={50} src={'/assets/profile2.jpg'} className="rounded-circle me-2"/> { 'Rajendra Nagar' } </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarText">
                 <ul className="navbar-nav ms-auto  mb-lg-0">
                     <li className="nav-item">
-                    <a className="nav-link" href="#"> {'Home'} </a>
+                    <Link className={`nav-link ${path === '/' ? 'highlight-text': ''}`} href="/"> {'Home'} </Link>
                     </li>
                      <li className="nav-item">
-                     <a className="nav-link" href="#"> {'About Me'} </a>
+                     <Link className={`nav-link ${path === '/about' ? 'highlight-text': ''}`} href="/about"> {'About'} </Link>
                     </li>
                     <li className="nav-item">
-                     <a className="nav-link" href="#"> {'Blogs'} </a>
+                    <Link className={`nav-link ${path === '/blogs' ? 'highlight-text': ''}`} href="/blogs"> {'Blogs'} </Link>
                     </li>
                     <li className="nav-item">
-                     <a className="nav-link" href="#"> {'Projects'} </a>
+                    <Link className={`nav-link ${path === '/projects' ? 'highlight-text': ''}`} href="/projects"> {'Projects'} </Link>
                     </li>
                     <li className="nav-item">
-                     <a className="nav-link" href="#"> {'Coffee with me'} </a>
+                    <Link className={`nav-link ${path === '/contact' ? 'highlight-text': ''}`} href="/contact"> {'Coffee with me'} </Link>
                     </li>
                 </ul>
-                <span className="navbar-text fw-bold highlight-text">
-                I Am Available For Freelancer.
-                </span>
                 </div>
             </div>
         </nav>

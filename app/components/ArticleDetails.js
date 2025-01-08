@@ -18,7 +18,7 @@ const ArticleDetails =  async(data) => {
       };
     return (
         <>
-        <div class="row justify-content-center blog_details">
+        <div className="row justify-content-center blog_details">
 
             <div className="col-md-8 justify-content-start">
            
@@ -34,7 +34,7 @@ const ArticleDetails =  async(data) => {
                                     </div>
                                    </div>
                                     <div className="mb-3 mt-5 mb-5 text-center">
-                                        <Image width={1200} alt="Rajendra Nagar"  height={700}  src={article.image} className="rounded" />
+                                        <Image width={1200} alt="Rajendra Nagar"  height={700}  src={article.image} className="rounded img-fluid" />
                                      </div>
 
                                     {documentToReactComponents(article.description, options)}

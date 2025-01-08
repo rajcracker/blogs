@@ -7,6 +7,8 @@
     title: data.fields.title,
     summary: data.fields.summary,
     previewImage: 'https:'+data.fields.image.fields.file.url,
+    Category: data.fields.blogCategory[0].fields.name,
+    date: data.fields.publishedDate,
     });
 
     export const createContentClient = () => {
