@@ -3,6 +3,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <>
+        
     <footer className="pt-5">
     <div className="container">
       <div className="row gy-4 gx-5">
