@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Footer() {
     return (
         <>
@@ -14,16 +14,16 @@ export default function Footer() {
           </p>
           <ul className="list-inline social-icons">
             <li className="list-inline-item">
-            <a href="#" className="highlight-text text-decoration-none"><i className="bi bi-facebook"></i></a>
+            <a href="https://www.facebook.com/raj.nagar.165" className="highlight-text text-decoration-none" target="_blank"><i className="bi bi-facebook"></i></a>
             </li>
             <li className="list-inline-item">
-              <a href="#" className="highlight-text text-decoration-none"><i className="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/rajendra-nagar-464580170/" target="_blank" className="highlight-text text-decoration-none"><i className="bi bi-linkedin"></i></a>
             </li>
             <li className="list-inline-item">
-              <a href="#" className="highlight-text text-decoration-none"><i className="bi bi-github"></i></a>
+              <a href="https://github.com/rajcracker" className="highlight-text text-decoration-none" target="_blank"><i className="bi bi-github"></i></a>
             </li>
             <li className="list-inline-item">
-              <a href="#" className="highlight-text text-decoration-none"><i className="bi bi-envelope"></i></a>
+              <a href="mailto:sharkweb.in@gmail.com" className="highlight-text text-decoration-none"><i className="bi bi-envelope"></i></a>
             </li>
           </ul>
           <p className="mb-0 blog-text"><Image width={18} alt="Rajendra Nagar" height={18} src={'/assets/footer_smily.png'}/> {'Feel Free to Contact Me.'}</p>
@@ -32,13 +32,12 @@ export default function Footer() {
         <div className="col-md-6">
           <div className="row">
             <div className="col-md-6">
-            <h5 className="fw-bold mb-3">Quick Links</h5>
+            <h5 className="fw-bold mb-3">{'Quick Links'}</h5>
                 <ul className="list-unstyled footer-links">
-                    <li><a href="#" className="text-dark text-decoration-none fw-bold">{'FAQ'}</a></li>
-                    <li><a href="#" className="text-dark text-decoration-none fw-bold">{'About Me'}</a></li>
-                    <li><a href="#" className="text-dark text-decoration-none fw-bold">{'Projects'}</a></li>
-                    <li><a href="#" className="text-dark text-decoration-none fw-bold">{'Contact Us'}</a></li>
-                    <li><a href="#" className="text-dark text-decoration-none fw-bold">{'Blogs'}</a></li>
+                    <li> <Link href="/about" className="text-dark text-decoration-none fw-bold">{'About Me'}</Link></li>
+                    <li> <Link href="/projects" className="text-dark text-decoration-none fw-bold">{'Projects'}</Link></li>
+                    <li> <Link href="/blogs" className="text-dark text-decoration-none fw-bold">{'Blogs'}</Link></li>
+                    <li> <Link href="/contact" className="text-dark text-decoration-none fw-bold">{'Contact'}</Link></li>
                 </ul>
             </div>
 

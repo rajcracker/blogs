@@ -1,7 +1,19 @@
 
 import { use } from "react";
 import Image from "next/image";
-import {productDetails}  from '../utils/content'
+import {productDetails}  from '../utils/content';
+
+export const metadata = {
+  title: "Recent Projects | Contact: +91 9950105566",
+  description:
+    "I am, a seasoned full-stack developer with 8+ years of experience in Laravel, Vue.js, React, and more. I specialize in building custom web solutions including e-commerce platforms and CMS. Contact me today at +91 9950105566.",
+  keywords: ["Vue.js Developer", "Full-Stack Web Developer", "Laravel Expert", "Custom Web Development"],
+  metadataBase: new URL("https://www.rajendranagar.co.in/"),
+  alternates: {
+    canonical: "https://www.rajendranagar.co.in/",
+  }
+};
+
 export default function Projects(params) {
   // const router = useRouter()
   return (<>

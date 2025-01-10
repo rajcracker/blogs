@@ -2,6 +2,16 @@
 import { use } from "react";
 import Image from "next/image";
 import Freelance from "../components/freelance";
+export const metadata = {
+  title: "Vue & Laravel Expert at Your Service | Contact: +91 9950105566",
+  description:
+    "Have a project in mind? Contact Rajendra, an expert full-stack developer specializing in Laravel, Vue.js, and React. Let’s discuss your web development needs today! Call +91 9950105566.",
+  keywords: ["Vue.js Developer", "Full-Stack Web Developer", "Laravel Expert", "Custom Web Development"],
+  metadataBase: new URL("https://www.rajendranagar.co.in/"),
+  alternates: {
+    canonical: "https://www.rajendranagar.co.in/",
+  }
+};
 export default function ContactMe(params) {
   return (<>
   <div className="container ">
