@@ -33,7 +33,7 @@ export default function Header() {
                     <Link className={`nav-link ${path === '/' ? 'highlight-text': ''}`} href="/"> {'Home'} </Link>
                     </li>
                      <li className="nav-item">
-                     <Link className={`nav-link ${path === '/about' ? 'highlight-text': ''}`} href="/about"> {'About'} </Link>
+                     <Link className={`nav-link ${path === '/about' ? 'highlight-text': ''}`} href="/about"> {'About Me'} </Link>
                     </li>
                     <li className="nav-item">
                     <Link className={`nav-link ${path === '/blogs' ? 'highlight-text': ''}`} href="/blogs"> {'Blogs'} </Link>

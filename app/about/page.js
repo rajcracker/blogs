@@ -146,6 +146,77 @@ export default function AboutMe(params) {
       </div>
 
     </div>
+
+    <div className="row">
+       <h3 className="fs-5">{'Project and code management tools'}</h3>
+
+       <div className="row mt-3">
+            <div className="col-md-2">
+              <div className="card shadow-lg  pt-3 mb-5 bg-white rounded border-0">
+                <div className="card-body ">
+                  <div className="list-item pb-2 border-0 project-tool">
+                  <Image width={200} alt="Rajendra Nagar" className="icon" height={150}  src='/assets/technologies/github.svg'/>
+                    <div>
+                      <div className="title mb-0 ms-2">{'GitHub'}</div>
+                    </div>
+                  </div> 
+                  
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-2">
+                  <div className="card shadow-lg  pt-3 mb-5 bg-white rounded border-0">
+                    <div className="card-body ">
+                      <div className="list-item pb-2 border-0 project-tool">
+                      <Image width={200} alt="Rajendra Nagar" className="icon" height={150}  src='/assets/technologies/jira.svg'/>
+                        <div>
+                          <div className="title mb-0 ms-2">{'Jira'}</div>
+                        </div>
+                      </div> 
+                      
+                      </div>
+                    </div>
+              </div>
+
+              <div className="col-md-2">
+                  <div className="card shadow-lg  pt-3 mb-5 bg-white rounded border-0">
+                    <div className="card-body ">
+                      <div className="list-item pb-2 border-0 project-tool">
+                      <Image width={200} alt="Rajendra Nagar" className="icon" height={150}  src='/assets/technologies/docker.svg'/>
+                        <div>
+                          <div className="title mb-0 ms-2">{'Docker'}</div>
+                        </div>
+                      </div> 
+                      
+                      </div>
+                    </div>
+              </div>
+       </div>
+    </div>
+
+    <div className="row mb-5">
+       <h3 className="fs-5">{'Achievements'}</h3>
+
+       <div className="row mt-3">
+            <div className="col-md-3">
+              <Image width={300} alt="Rajendra Nagar"  height={300}  src='/assets/award1.jpg' className="w-100 img-fluid"/>
+              <p className="fs-5 mt-2 mb-0">{'Evergreen person of the year'}  <br/>
+                - <span className="fs-6">{'Kriscent Techno Hub Pvt. Ltd.'}</span></p>
+            </div>
+            <div className="col-md-3">
+              <Image width={300} alt="Rajendra Nagar"  height={300}  src='/assets/award2.jpg' className="w-100 img-fluid"/>
+              <p className="fs-5 mt-2 mb-0">{'Employee of the year'}  <br/>
+                - <span className="fs-6">{'Kriscent Techno Hub Pvt. Ltd.'}</span></p>
+            </div>
+
+            <div className="col-md-3">
+              <Image width={300} alt="Rajendra Nagar"  height={300}  src='/assets/award3.png' className="w-100 img-fluid"/>
+              <p className="fs-5 mt-2 mb-0">{'Achievements of the year'}  <br/>
+                - <span className="fs-6">{'Cracker Digital Media'}</span></p>
+            </div>
+       </div>
+    </div>
   </div>
   </>)
 }

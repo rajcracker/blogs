@@ -176,7 +176,7 @@ a {
 .list-item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
 .list-item img {
@@ -273,6 +273,10 @@ a {
 /* Optional transition for smooth color change */
 .feature-list li {
   transition: color 0.3s ease;
+}
+
+.project-tool svg {
+  width: 40px;
 }
 
 
