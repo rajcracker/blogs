@@ -28,6 +28,40 @@ export default function AboutMe(params) {
       </div>
     </div>
     <div className="row">
+      <div className="col-md-12 mt-5 mb-3 text-center">
+        <p className="fs-3 fw-400">{'Creating value for organizations with custom-tailored and scalable solutions.'}</p>
+      </div>
+
+      <div className="row justify-content-center">
+          <div className="col-md-2">
+            <div className="card shadow-lg  pt-3 mb-5 bg-white rounded border-0">
+              <div className="card-body">
+                <div className="list-item pb-2 border-0">
+                    <Image width={200} alt="Rajendra Nagar" className="icon" height={150}  src='/assets/company.png'/>
+                    <div>
+                      <div className="title mb-0">{'Cracker Digital Media Pvt.'}</div>
+                    </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-2">
+            <div className="card shadow-lg  pt-3 mb-5 bg-white rounded border-0">
+              <div className="card-body">
+                <div className="list-item pb-2 border-0">
+                    <Image width={200} alt="Rajendra Nagar" className="icon" height={150}  src='/assets/company2.jpg'/>
+                    <div>
+                      <div className="title mb-0">{'Kriscent Techno Hub Pvt. Ltd.'}</div>
+                    </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <div className="row">
       <div className="col-md-12 mt-5 mb-3">
         <h3 className="fs-5">{'Core Skills'}</h3>
       </div>

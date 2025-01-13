@@ -18,7 +18,8 @@ const Article = async() => {
         <div className="container">
           <div className="row">
             <div className="col-md-9 ps-0">
-            <h2 className="fw-bold fs-4 mb-5 mt-5 text-uppercase">{'Recent Blogs'}</h2>
+            <h1 className="fw-bold fs-4 mb-5 mt-5 text-uppercase">{'Recent Blogs'}</h1>
+
             {article.map((item) => (
                         <div  key={item.id}>
                         <div className="card  border-0">
@@ -51,60 +52,10 @@ const Article = async() => {
                   ))}
             </div>
             <div className="col-md-3 sidebar">
-                {/*Technologies */}
-                {/* <div className="card shadow-lg  pt-3 mb-5 bg-white rounded border-0 mt-5">
-                  <div className="card-header border-0">
-                    {'Technologies'}
-                  </div>
-                  <div className="card-body pt-2">
-                    <div className="list-item pb-2">
-                      <Image width={200} alt="Rajendra Nagar" className="icon" height={150}  src='/assets/technologies/Vue.js_Logo_2.svg'/>
-                      <div>
-                        <div className="title">{'Vue Js, Vuex'}</div>
-                      </div>
-                    </div> 
-                    <div className="list-item pb-2">
-                      <Image width={200} alt="Rajendra Nagar" className="icon" height={150}  src='/assets/technologies/nextjs-icon-svgrepo-com.svg'/>
-                      <div>
-                        <div className="title">{'Next Js Development'}</div>
-                        <div className="description">{'Expertise in building server-rendered and static web applications.'}</div>
-                      </div>
-                    </div>
-                    <div className="list-item pb-2">
-                      <Image width={200} alt="Rajendra Nagar" className="icon" height={150}  src='/assets/technologies/js.svg'/>
-                      <div>
-                        <div className="title">{'Javascript'}</div>
-                        <div className="description">{'Skilled in building dynamic web apps with clean and efficient code.'}</div>
-                      </div>
-                    </div>
-                    <div className="list-item pb-2">
-                      <Image width={200} alt="Rajendra Nagar" className="icon" height={150}  src='/assets/technologies/react.svg'/>
-                      <div>
-                        <div className="title">{'React'}</div>
-                        <div className="description">{'Skilled in building dynamic web apps with clean and efficient code.'}</div>
-                      </div>
-                    </div>
-
-                    <div className="list-item pb-2">
-                      <Image width={200} alt="Rajendra Nagar" className="icon" height={150}  src='/assets/technologies/laravel-2.svg'/>
-                      <div>
-                        <div className="title">{'React'}</div>
-                        <div className="description">{'Skilled in building dynamic web apps with clean and efficient code.'}</div>
-                      </div>
-                    </div>
-                    <div className="list-item pb-2">
-                      <Image width={200} alt="Rajendra Nagar" className="icon" height={150}  src='/assets/technologies/wp.svg'/>
-                      <div>
-                        <div className="title">{'React'}</div>
-                        <div className="description">{'Skilled in building dynamic web apps with clean and efficient code.'}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
-
                 <div className="card shadow-lg  pt-3 mb-5 bg-white rounded border-0 mt-5">
                   <div className="card-header border-0">
                     <h3 className="fs-5 text-uppercase">{'Recent Projects'}</h3>
+                    <p className="text-danger">{'All listed projects were carried out under Cracker Digital Media Pvt. Ltd.'}</p>
                   </div>
                   <div className="card-body pt-2">
                     {productDetails.map((data) => (

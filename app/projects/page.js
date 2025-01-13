@@ -20,6 +20,7 @@ export default function Projects(params) {
   <div className="container">
         <div className="row  mt-5 mb-2 text-center">
           <h1 className="fs-3 mb-3">{'Recent Projects'}</h1>
+          <p className="text-danger">{'All listed projects were carried out under Cracker Digital Media Pvt. Ltd.'}</p>
         </div>
       <div className="row justify-content-center">
         { productDetails.map((data) => (
