@@ -20,6 +20,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta property="og:title" content="Rajendranagar - Freelance Web Solutions Expert" />
+      <meta property="og:description" content="Providing professional web solutions with expertise in Vue.js and Laravel. Let's build modern, scalable, and efficient websites for your business." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://rajendranagar.co.in/" />
+      <meta property="og:image" content="https://rajendranagar.co.in/assets/profile2.jpg" />
       <body>
       <Header/>
         {children}
