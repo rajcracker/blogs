@@ -1,6 +1,8 @@
 
 import ArticleDetails from "@/app/components/ArticleDetails";
 import { use } from "react";
+
+
  
 // export default function asyncPage(params) {
 // const articleDetail = await

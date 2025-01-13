@@ -44,7 +44,8 @@
          AutherName: data.auther.fields.name,
          description: data.description,
          summary: data.summary,
-         image: 'https:'+data.image.fields.file.url
+         image: 'https:'+data.image.fields.file.url,
+         id: entryId,
        });
      
        return createArticleDetail(parsedResponse.fields);
