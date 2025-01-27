@@ -54,7 +54,6 @@ const SingleArticleDetails =  ({article}) => {
                                                 <div className="mb-3 mt-5 mb-5 text-center">
                                                     <Image width={1200} alt="Rajendra Nagar"  height={700}  src={article.image} className="rounded img-fluid" />
                                                 </div>
-
                                                 {documentToReactComponents(article.description, options)}
                                                 
 												<div className="row">
